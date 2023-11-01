@@ -1,0 +1,26 @@
+post:
+  security: []
+  operationId: login
+  tags:
+    - User
+  summary: login
+  description: login using `email` and `password`
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/LoginForm.yaml
+
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/JWTToken.yaml
+    "401":
+      description: Incorrect Username or Password
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml

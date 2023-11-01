@@ -1,0 +1,16 @@
+type: object
+properties:
+  code:
+    description: Status code
+    type: number
+    format: int32
+    example: 200
+  expire:
+    description: Expiration date of the token
+    type: string
+    format: datetime
+    example: "2023-11-01T13:01:55+03:30"
+  token:
+    description: JWT Token
+    type: string
+    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTg4MzA3NTksImlkIjoiYWRtaW5Ac2lnbG95bGFuZC5jb20iLCJvcmlnX2lhdCI6MTY5ODgyNzE1OX0.BgaJY-4fbJVVqe5LP-4ID5IeL0rBiwuBsQk8Oxtu1xk

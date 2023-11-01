@@ -1,0 +1,20 @@
+post:
+  security: []
+  operationId: register
+  tags:
+    - User
+  summary: register a new user
+  description: register a new user using `email` and `password`
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/RegisterationForm.yaml
+
+  responses:
+    "200":
+      description: Success
+    "400":
+      description: Bad request
+    "409":
+      description: User already exists

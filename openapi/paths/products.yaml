@@ -1,0 +1,19 @@
+get:
+  tags:
+    - Product
+  summary: Get products
+  description: |
+    Get all products
+  operationId: getProducts
+  security: []
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/Product.yaml
+    "404":
+      description: No product found

@@ -1,0 +1,21 @@
+post:
+  operationId: refresh
+  tags:
+    - User
+  summary: refresh token
+  description: refresh JWT token
+  security:
+    - jwt: []
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/JWTToken.yaml
+    "401":
+      description: Incorrect Username or Password
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml

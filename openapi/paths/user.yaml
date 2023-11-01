@@ -1,0 +1,23 @@
+get:
+  tags:
+    - User
+  summary: Get user
+  description: |
+    Some description of the operation. 
+    You can use `markdown` here.
+  operationId: getUser
+  security:
+    - jwt: []
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/User.yaml
+          example:
+            email: user@example.com
+    "403":
+      description: Forbidden
+    "404":
+      description: User not found

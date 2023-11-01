@@ -2,3 +2,5 @@ type: object
 properties:
   email:
     $ref: ./Email.yaml
+  password:
+    $ref: ./Password.yaml
