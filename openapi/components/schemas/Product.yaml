@@ -1,8 +1,28 @@
 type: object
 properties:
+  thumbnail:
+    description: Product thumbnail
+    type: string
+    example: https://sigloyland.com/static/thumbnail
+  title:
+    description: Product titile
+    type: string
+    example: Some Title
+  features:
+    description: Product features
+    type: array
+    example: ["feature 1", "feature 2"]
   price:
     description: Product price
     type: number
     format: double
     example: 49.99
-
+  offPrice:
+    description: Product off price
+    type: number
+    format: double
+    example: 39.99
+  tags:
+    description: Product tags
+    type: array
+    example: ["tag 1", "tag 2"]
