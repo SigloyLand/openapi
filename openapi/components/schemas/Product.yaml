@@ -22,7 +22,3 @@ properties:
     type: number
     format: double
     example: 39.99
-  tags:
-    description: Product tags
-    type: array
-    example: ["tag 1", "tag 2"]

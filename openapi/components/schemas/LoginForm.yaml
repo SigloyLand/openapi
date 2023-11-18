@@ -1,4 +1,7 @@
 type: object
+required:
+  - phoneNumber
+  - password
 properties:
   phoneNumber:
     $ref: ./PhoneNumber.yaml

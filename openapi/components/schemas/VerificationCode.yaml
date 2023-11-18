@@ -1,0 +1,6 @@
+description: Verification Code
+type: integer
+format: int64
+minLength: 6
+maxLength: 6
+example: 123456

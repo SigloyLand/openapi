@@ -27,6 +27,8 @@ paths:
     $ref: paths/user@login.yaml
   "/user/refresh":
     $ref: paths/user@refresh.yaml
+  "/user/verify":
+    $ref: paths/user@verify.yaml
   "/user":
     $ref: "paths/user.yaml"
   "/products":

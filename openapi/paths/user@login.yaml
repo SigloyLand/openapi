@@ -4,7 +4,7 @@ post:
   tags:
     - User
   summary: login
-  description: login using `email` and `password`
+  description: login using `phoneNumber` and `password`
   requestBody:
     content:
       application/json:
@@ -24,3 +24,8 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/Error.yaml
+          examples:
+            loginFailed:
+              value:
+                code: 401
+                message: "Incorrect Username or Password"

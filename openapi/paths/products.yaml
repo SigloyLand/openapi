@@ -15,5 +15,27 @@ get:
             type: array
             items:
               $ref: ../components/schemas/Product.yaml
+            example:
+              - thumbnail: https://sigloyland.com/static/thumbnail-1
+                title: Product titile 1
+                features: ["feature 1-1", "feature 1-2"]
+                price: 49.99
+                offPrice: 39.99
+              - thumbnail: https://sigloyland.com/static/thumbnail-2
+                title: Product titile 2
+                features: ["feature 2-1", "feature 2-2"]
+                price: 49.99
+
     "404":
       description: No product found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            notFound:
+              summary: No product found
+              description: did not find any product
+              value:
+                code: 404
+                message: "no product found"

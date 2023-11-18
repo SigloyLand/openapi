@@ -1,4 +1,6 @@
 type: object
 properties:
+  verified:
+    $ref: Verified.yaml
   phoneNumber:
-    $ref: ./PhoneNumber.yaml
+    $ref: PhoneNumber.yaml

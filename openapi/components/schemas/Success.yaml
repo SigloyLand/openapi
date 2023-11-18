@@ -1,0 +1,9 @@
+type: object
+properties:
+  code:
+    description: Status code
+    type: number
+    format: int32
+  message:
+    description: success message
+    type: string

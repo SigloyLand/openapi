@@ -1,0 +1,41 @@
+post:
+  security: []
+  operationId: verify
+  tags:
+    - User
+  summary: verify
+  description: Verify user using the code sent to the user phone number
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/VerificationForm.yaml
+
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Success.yaml
+          examples:
+            verifySuccess:
+              summary: Verification Successful
+              description: User verification successful
+              value:
+                code: 200
+                message: "user verified"
+
+    "401":
+      description: Incorrect verification code
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            verifyFailed:
+              summary: invalid verification code
+              description: Entered verification code is invalid
+              value:
+                code: 401
+                message: "invalid verification code"

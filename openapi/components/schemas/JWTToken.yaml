@@ -9,8 +9,8 @@ properties:
     description: Expiration date of the token
     type: string
     format: datetime
-    example: "2023-11-01T13:01:55+03:30"
+    example: "2023-11-12T10:37:17+03:30"
   token:
     description: JWT Token
     type: string
-    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTg4MzA3NTksImlkIjoiYWRtaW5Ac2lnbG95bGFuZC5jb20iLCJvcmlnX2lhdCI6MTY5ODgyNzE1OX0.BgaJY-4fbJVVqe5LP-4ID5IeL0rBiwuBsQk8Oxtu1xk
+    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTk3NzI4MzcsImlkIjoxLCJvcmlnX2lhdCI6MTY5OTY4NjQzN30.NQVNy8VCOU62bk3zH6-GhsCnAp7Oj2oZBa414zSTPoo

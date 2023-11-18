@@ -15,9 +15,19 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/User.yaml
-          example:
-            phoneNumber: "9215518649"
+          examples:
+            user:
+              value:
+                phoneNumber: "+989215518649"
+                verified: True
     "403":
       description: Forbidden
-    "404":
-      description: User not found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            forbidden:
+              value:
+                code: 403
+                message: "Not logged in"
