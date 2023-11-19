@@ -1,9 +1,13 @@
 type: object
 properties:
+  id:
+    description: Product id
+    $ref: ../parameters/id.yaml
+    example: 1
   thumbnail:
     description: Product thumbnail
     type: string
-    example: https://sigloyland.com/static/thumbnail
+    example: https://sigloyland.com/static/thumbnail-1
   title:
     description: Product titile
     type: string

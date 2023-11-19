@@ -16,15 +16,44 @@ get:
             items:
               $ref: ../components/schemas/Product.yaml
             example:
-              - thumbnail: https://sigloyland.com/static/thumbnail-1
-                title: Product titile 1
-                features: ["feature 1-1", "feature 1-2"]
+              - id: 1
+                thumbnail: https://sigloyland.com/static/thumbnail-1
+                title: a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                features:
+                  [
+                    "in hendrerit gravida rutrum quisque",
+                    "sit amet volutpat consequat mauris",
+                  ]
                 price: 49.99
                 offPrice: 39.99
-              - thumbnail: https://sigloyland.com/static/thumbnail-2
-                title: Product titile 2
-                features: ["feature 2-1", "feature 2-2"]
+              - id: 2
+                thumbnail: https://sigloyland.com/static/thumbnail-2
+                title: nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu
+                features:
+                  [
+                    "fermentum et sollicitudin ac orci",
+                    "accumsan tortor posuere ac ut",
+                  ]
                 price: 49.99
+              - id: 3
+                thumbnail: https://sigloyland.com/static/thumbnail-1
+                title: etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing
+                features:
+                  [
+                    "pharetra diam sit amet nisl",
+                    "morbi tristique senectus et netus",
+                  ]
+                price: 49.99
+              - id: 4
+                thumbnail: https://sigloyland.com/static/thumbnail-2
+                title: quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis
+                features:
+                  [
+                    "eget felis eget nunc lobortis",
+                    "urna cursus eget nunc scelerisque",
+                  ]
+                price: 49.99
+                offPrice: 39.99
 
     "404":
       description: No product found

@@ -1,0 +1,48 @@
+get:
+  tags:
+    - Product
+  summary: Get product by ID
+  description: |
+    Get all products
+  operationId: getProductByID
+  security: []
+  parameters:
+    - name: id
+      in: path
+      required: true
+      schema:
+        $ref: ../components/parameters/id.yaml
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            items:
+              $ref: ../components/schemas/Product.yaml
+            example:
+              id: 1
+              thumbnail: https://sigloyland.com/static/thumbnail-1
+              title: a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+              features:
+                [
+                  "in hendrerit gravida rutrum quisque",
+                  "sit amet volutpat consequat mauris",
+                ]
+              price: 49.99
+              offPrice: 39.99
+
+    "404":
+      description: No product found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            notFound:
+              summary: No product found
+              description: did not find any product
+              value:
+                code: 404
+                message: "no product found"
