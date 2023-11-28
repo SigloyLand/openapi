@@ -1,6 +1,6 @@
 description: Verification Code
 type: integer
-format: int64
+format: uint
 minLength: 6
 maxLength: 6
 example: 123456

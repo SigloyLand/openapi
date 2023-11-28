@@ -17,40 +17,50 @@ get:
               $ref: ../components/schemas/Product.yaml
             example:
               - id: 1
-                thumbnail: https://sigloyland.com/static/thumbnail-1
-                title: a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                thumbnail: https://picsum.photos/200/300
+                title: پکیج بورس ایران
                 features:
                   [
-                    "in hendrerit gravida rutrum quisque",
-                    "sit amet volutpat consequat mauris",
+                    "اخبار و اطلاع رسانی دقیق از مسائل جزئی و اساسی بورس ایران",
+                    "تحلیل پایه ای و تخصصی و همچنین سیگنال VIP",
                   ]
                 price: 49.99
                 offPrice: 39.99
               - id: 2
-                thumbnail: https://sigloyland.com/static/thumbnail-2
-                title: nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu
+                thumbnail: https://picsum.photos/200/300
+                title: پکیج فارکس و بورس خارجی
                 features:
                   [
-                    "fermentum et sollicitudin ac orci",
-                    "accumsan tortor posuere ac ut",
+                    "اخبار و اطلاع رسانی دقیق از مسائل جزئی و اساسی بورس ایران",
+                    "تحلیل پایه ای و تخصصی و همچنین سیگنال VIP",
                   ]
                 price: 49.99
               - id: 3
-                thumbnail: https://sigloyland.com/static/thumbnail-1
-                title: etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing
+                thumbnail: https://picsum.photos/200/300
+                title: پکیج بازار کریپتو
                 features:
                   [
-                    "pharetra diam sit amet nisl",
-                    "morbi tristique senectus et netus",
+                    "اخبار و اطلاع رسانی دقیق از مسائل جزئی و اساسی بورس ایران",
+                    "تحلیل پایه ای و تخصصی و همچنین سیگنال VIP",
                   ]
                 price: 49.99
               - id: 4
-                thumbnail: https://sigloyland.com/static/thumbnail-2
-                title: quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis
+                thumbnail: https://picsum.photos/200/300
+                title: پکیج دلار و طلا
                 features:
                   [
-                    "eget felis eget nunc lobortis",
-                    "urna cursus eget nunc scelerisque",
+                    "اخبار و اطلاع رسانی دقیق از مسائل جزئی و اساسی بورس ایران",
+                    "تحلیل پایه ای و تخصصی و همچنین سیگنال VIP",
+                  ]
+                price: 49.99
+                offPrice: 39.99
+              - id: 5
+                thumbnail: https://picsum.photos/200/300
+                title: پکیج بورس ایران ۲
+                features:
+                  [
+                    "اخبار و اطلاع رسانی دقیق از مسائل جزئی و اساسی بورس ایران",
+                    "تحلیل پایه ای و تخصصی و همچنین سیگنال VIP",
                   ]
                 price: 49.99
                 offPrice: 39.99

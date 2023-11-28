@@ -21,14 +21,14 @@ servers:
   - url: "http://sigloyland.com/api/v1"
   - url: "https://sigloyland.com/api/v1"
 paths:
+  "/user/verification/request":
+    $ref: paths/user@verification@request.yaml
   "/user/register":
     $ref: paths/user@register.yaml
   "/user/login":
     $ref: paths/user@login.yaml
   "/user/refresh":
     $ref: paths/user@refresh.yaml
-  "/user/verify":
-    $ref: paths/user@verify.yaml
   "/user/forget-password":
     $ref: paths/user@forget-password.yaml
   "/user":

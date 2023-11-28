@@ -1,0 +1,43 @@
+post:
+  security: []
+  operationId: verificationRequest
+  tags:
+    - User
+  summary: request verification code
+  description: Request verfication code to be sent to the provided `phoneNumber`. The response will
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/VerificationCodeRequest.yaml
+
+  responses:
+    "202":
+      description: Success
+
+    "400":
+      description: Incorrect verification code
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            verifyFailed:
+              summary: invalid or expired `verficationCode`
+              description: Entered `verficationCode` is invalid or expired
+              value:
+                code: 400
+                message: "invalid verification code"
+    "409":
+      description: User already exists
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            alreadyExists:
+              summary: phone number is already registered
+              description: Entered `phoneNumber` is already registered
+              value:
+                code: 409
+                message: "user already exists"

@@ -2,9 +2,7 @@ get:
   tags:
     - User
   summary: Get user
-  description: |
-    Some description of the operation. 
-    You can use `markdown` here.
+  description: get user info
   operationId: getUser
   security:
     - jwt: []
@@ -19,8 +17,7 @@ get:
             user:
               value:
                 phoneNumber: "+989215518649"
-                verified: True
-    "403":
+    "401":
       description: Forbidden
       content:
         application/json:
@@ -29,5 +26,5 @@ get:
           examples:
             forbidden:
               value:
-                code: 403
+                code: 401
                 message: "Not logged in"
