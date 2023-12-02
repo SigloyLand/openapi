@@ -1,0 +1,6 @@
+type: object
+required:
+  - verificationCode
+properties:
+  verificationCode:
+    $ref: VerificationCode.yaml

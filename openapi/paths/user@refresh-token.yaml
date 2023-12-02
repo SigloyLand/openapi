@@ -1,11 +1,11 @@
 post:
-  security:
-    - jwt: []
-  operationId: refresh
   tags:
     - User
   summary: refresh token
   description: refresh JWT token
+  operationId: refresh
+  security:
+    - jwt: []
   responses:
     "200":
       description: Success

@@ -3,16 +3,16 @@ post:
   operationId: verificationRequest
   tags:
     - User
-  summary: request verification code
-  description: Request verfication code to be sent to the provided `phoneNumber`. The response will
+  summary: verify user
+  description: Verify user using the verification code sent to the Phone Number
   requestBody:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/VerificationCodeRequest.yaml
+          $ref: ../components/schemas/VerifyRequest.yaml
 
   responses:
-    "202":
+    "200":
       description: Success
 
     "400":

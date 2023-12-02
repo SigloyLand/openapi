@@ -13,8 +13,13 @@ post:
 
   responses:
     "200":
-      description: Success
-      $ref: ../components/schemas/JWTToken.yaml
+      description: Login Successful
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/JWTToken.yaml
+    "202":
+      description: Verification code sent
 
     "400":
       description: Bad request
@@ -22,9 +27,19 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/Error.yaml
-    "409":
-      description: User already exists
+          examples:
+            invalidData:
+              value:
+                code: 400
+                message: "invalid PhoneNumber or Password"
+    "401":
+      description: incorrect PhoneNumber and Password
       content:
         application/json:
           schema:
             $ref: ../components/schemas/Error.yaml
+          examples:
+            invalidData:
+              value:
+                code: 401
+                message: "incorrect credentials"

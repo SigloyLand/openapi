@@ -1,6 +1,0 @@
-type: object
-required:
-  - phoneNumber
-properties:
-  phoneNumber:
-    $ref: PhoneNumber.yaml

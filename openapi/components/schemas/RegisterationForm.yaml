@@ -8,5 +8,3 @@ properties:
     $ref: ./PhoneNumber.yaml
   password:
     $ref: ./Password.yaml
-  verificationCode:
-    $ref: ./VerificationCode.yaml
