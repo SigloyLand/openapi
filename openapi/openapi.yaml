@@ -24,7 +24,7 @@ paths:
   "/user/verify":
     $ref: paths/user@verify.yaml
   "/user/entry":
-    $ref: paths/user@register.yaml
+    $ref: paths/user@entry.yaml
   "/user/refresh":
     $ref: paths/user@refresh-token.yaml
   "/user/forget-password":
@@ -37,7 +37,5 @@ paths:
     $ref: paths/product@{id}.yaml
 components:
   securitySchemes:
-    oauth2:
-      $ref: components/securitySchemes/oauth2.yaml
     jwt:
       $ref: components/securitySchemes/jwt.yaml

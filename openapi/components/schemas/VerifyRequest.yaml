@@ -1,6 +1,9 @@
 type: object
 required:
+  - phoneNumber
   - verificationCode
 properties:
+  phoneNumber:
+    $ref: PhoneNumber.yaml
   verificationCode:
     $ref: VerificationCode.yaml

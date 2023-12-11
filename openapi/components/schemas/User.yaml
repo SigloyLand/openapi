@@ -1,4 +1,6 @@
 type: object
 properties:
+  id:
+    $ref: ID.yaml
   phoneNumber:
     $ref: PhoneNumber.yaml

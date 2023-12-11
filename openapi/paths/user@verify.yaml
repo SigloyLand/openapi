@@ -28,16 +28,3 @@ post:
               value:
                 code: 400
                 message: "invalid verification code"
-    "409":
-      description: User already exists
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/Error.yaml
-          examples:
-            alreadyExists:
-              summary: phone number is already registered
-              description: Entered `phoneNumber` is already registered
-              value:
-                code: 409
-                message: "user already exists"

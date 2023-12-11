@@ -1,0 +1,4 @@
+description: User ID
+type: integer
+format: uint
+example: 1

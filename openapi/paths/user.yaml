@@ -16,7 +16,9 @@ get:
           examples:
             user:
               value:
+                id: 1
                 phoneNumber: "+989215518649"
+
     "401":
       description: Forbidden
       content:
