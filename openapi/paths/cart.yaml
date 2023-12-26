@@ -1,9 +1,9 @@
 get:
   tags:
-    - User
-  summary: Get user
-  description: get user info
-  operationId: getUser
+    - Cart
+  summary: Get cart
+  description: Get user cart data
+  operationId: getCart
   security:
     - jwt: []
   responses:
@@ -12,13 +12,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/User.yaml
-          examples:
-            user:
-              value:
-                id: 1
-                phoneNumber: "+989215518649"
-
+            $ref: ../components/schemas/Cart.yaml
     "401":
       description: Unauthorized
       content:

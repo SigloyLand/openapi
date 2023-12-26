@@ -1,9 +1,9 @@
 get:
   tags:
-    - User
-  summary: Get user
-  description: get user info
-  operationId: getUser
+    - Payment
+  summary: Get payments
+  description: Get all user payments
+  operationId: getPayments
   security:
     - jwt: []
   responses:
@@ -12,13 +12,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/User.yaml
-          examples:
-            user:
-              value:
-                id: 1
-                phoneNumber: "+989215518649"
-
+            $ref: ../components/schemas/Payment.yaml
     "401":
       description: Unauthorized
       content:

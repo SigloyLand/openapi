@@ -18,8 +18,8 @@ tags:
   - name: User
     description: Operations about user
 servers:
-  - url: "http://sigloyland.com/api/v1"
-  - url: "https://sigloyland.com/api/v1"
+  - url: "https://api.sigloyland.com"
+  - url: "https://staging.api.sigloyland.com"
 paths:
   "/user/verify":
     $ref: paths/user@verify.yaml
@@ -29,12 +29,25 @@ paths:
     $ref: paths/user@refresh-token.yaml
   "/user/forget-password":
     $ref: paths/user@forget-password.yaml
+  "/user/forget-password/verify":
+    $ref: paths/user@forget-password@verify.yaml
+  "/user/reset-password":
+    $ref: paths/user@reset-password.yaml
   "/user":
-    $ref: "paths/user.yaml"
-  "/products":
-    $ref: paths/products.yaml
+    $ref: paths/user.yaml
+  "/product/all":
+    $ref: paths/product@all.yaml
   "/product/{id}":
     $ref: paths/product@{id}.yaml
+  "/cart":
+    $ref: paths/cart.yaml
+  "/cart/{productID}":
+    $ref: paths/cart@{productID}.yaml
+  "/payment/all":
+    $ref: paths/payment@all.yaml
+  "/payment":
+    $ref: paths/payment.yaml
+
 components:
   securitySchemes:
     jwt:

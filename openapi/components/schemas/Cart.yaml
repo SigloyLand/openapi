@@ -1,0 +1,11 @@
+type: object
+properties:
+  id:
+    description: Cart ID
+    type: integer
+    format: uint
+    example: 1
+  items:
+    type: array
+    items:
+      $ref: Product.yaml

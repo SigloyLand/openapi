@@ -1,6 +1,13 @@
 type: object
 properties:
   id:
+    description: User ID
     $ref: ID.yaml
   phoneNumber:
     $ref: PhoneNumber.yaml
+  avatar:
+    $ref: Avatar.yaml
+  role:
+    $ref: Role.yaml
+  verified:
+    $ref: Verified.yaml

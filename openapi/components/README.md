@@ -1,3 +1,4 @@
+API docs is available at: [https://sigloyland.github.io/openapi/](https://sigloyland.github.io/openapi/)
 Reusable components
 ===========
 

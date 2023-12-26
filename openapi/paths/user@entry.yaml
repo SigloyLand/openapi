@@ -3,13 +3,13 @@ post:
   operationId: register
   tags:
     - User
-  summary: register a new user
-  description: register a new user using `phoneNumber` and `password`
+  summary: login/register user
+  description: login/register user using `phoneNumber` and `password`
   requestBody:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/RegisterationForm.yaml
+          $ref: ../components/schemas/EntryForm.yaml
 
   responses:
     "200":

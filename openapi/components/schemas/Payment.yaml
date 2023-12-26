@@ -1,0 +1,20 @@
+type: object
+properties:
+  id:
+    description: Payment ID
+    $ref: ID.yaml
+  products:
+    type: array
+    items:
+      $ref: Product.yaml
+  status:
+    type: string
+    example: pending
+  totalPrice:
+    type: number
+    format: double
+    example: 99.98
+  createdAt:
+    type: string
+    format: datetime
+    example: "2023-11-12T10:37:17+03:30"

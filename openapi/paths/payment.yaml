@@ -1,0 +1,35 @@
+post:
+  tags:
+    - Payment
+  summary: Pay
+  description: Proceed with payment of the cart
+  operationId: proceedPayment
+  security:
+    - jwt: []
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                description: status code
+                type: number
+                format: int32
+                example: 200
+              redirectUrl:
+                type: string
+                example: "https://coinpayments.com/payment?queryparams=12334"
+    "401":
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            forbidden:
+              value:
+                code: 401
+                message: "Not logged in"

@@ -1,0 +1,91 @@
+put:
+  tags:
+    - Cart
+  summary: Add product
+  description: Add product to cart
+  operationId: addProduct
+  security:
+    - jwt: []
+  parameters:
+    - name: productID
+      in: path
+      required: true
+      schema:
+        $ref: ../components/parameters/id.yaml
+  responses:
+    "200":
+      description: Success
+
+    "401":
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            unauthorized:
+              value:
+                code: 401
+                message: "Not logged in"
+    "404":
+      description: Product not found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            notFound:
+              value:
+                code: 404
+                message: "product not found"
+    "409":
+      description: Product already exists
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            conflict:
+              value:
+                code: 409
+                message: "product already exists"
+
+delete:
+  tags:
+    - Cart
+  summary: Delete product
+  description: Delete product from cart
+  operationId: deleteProduct
+  security:
+    - jwt: []
+  parameters:
+    - name: productID
+      in: path
+      required: true
+      schema:
+        $ref: ../components/parameters/id.yaml
+  responses:
+    "200":
+      description: Success
+    "401":
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            unauthorized:
+              value:
+                code: 401
+                message: "Not logged in"
+    "404":
+      description: Product not found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            notFound:
+              value:
+                code: 404
+                message: "product not found"
