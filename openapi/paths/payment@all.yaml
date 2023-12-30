@@ -12,7 +12,9 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Payment.yaml
+            type: array
+            items:
+              $ref: ../components/schemas/Payment.yaml
     "401":
       description: Unauthorized
       content:
