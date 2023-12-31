@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  version: 0.1.0
+  version: 0.1.1
   title: sigloyland
   termsOfService: "https://sigloyland.com/terms/"
   contact:
@@ -11,9 +11,16 @@ info:
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
   x-logo:
     url: "images/Logo.svg"
-  description: >
+  description: |-
     Documentation for **sigloyland** API
 
+    version v0.1.1:
+      - changed `/user/forget-password` status code from `201` to `202`
+      - added `400` response to `/user/forget-password/verify` for invalid request
+      - added `401` response to `/user/reset-password` for invalid or expired reset password token
+
+    version v0.1.0:
+      - initial version
 tags:
   - name: User
     description: Operations about user
