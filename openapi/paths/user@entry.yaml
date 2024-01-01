@@ -17,9 +17,9 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/JWTToken.yaml
-    "202":
-      description: Verification code sent
+            oneOf:
+              - $ref: ../components/schemas/JWTToken.yaml
+              - $ref: ../components/schemas/Cooldown.yaml
 
     "400":
       description: Bad request

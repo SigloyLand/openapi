@@ -1,0 +1,12 @@
+type: object
+properties:
+  code:
+    description: status code
+    type: number
+    format: int32
+    example: 200
+  cooldown:
+    description: cooldown period in seconds
+    type: integer
+    format: int32
+    example: 120

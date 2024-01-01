@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  version: 0.1.1
+  version: 0.1.2
   title: sigloyland
   termsOfService: "https://sigloyland.com/terms/"
   contact:
@@ -13,6 +13,12 @@ info:
     url: "images/Logo.svg"
   description: |-
     Documentation for **sigloyland** API
+
+    version v0.1.2:
+      - modified `/user/entry` success status code from `202` to `200`
+      - entry now returns two different responses based on wether the user needs to be verified or not
+      - modified `/user/forget-password` status code from `202` ro `200`
+      - `/user/forget-password` response body contains the `cooldown` key
 
     version v0.1.1:
       - changed `/user/forget-password` status code from `201` to `202`
