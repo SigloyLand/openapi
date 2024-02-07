@@ -26,3 +26,9 @@ properties:
     type: number
     format: double
     example: 39.99
+  exclusive:
+    description: if this product is exclusive for adding to the cart
+    type: boolean
+    example: false
+
+    
