@@ -32,6 +32,7 @@ get:
                 ]
               price: 49.99
               offPrice: 39.99
+              exclusive: true
     "404":
       description: No product found
       content:

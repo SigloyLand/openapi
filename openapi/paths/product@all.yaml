@@ -43,6 +43,7 @@ get:
                   ]
                 price: 49.99
                 offPrice: 39.99
+                exclusive: true
               - id: 2
                 thumbnail: https://picsum.photos/200/300
                 title: پکیج فارکس و بورس خارجی
@@ -61,6 +62,7 @@ get:
                     "تحلیل پایه ای و تخصصی و همچنین سیگنال VIP",
                   ]
                 price: 49.99
+                exclusive: true
               - id: 4
                 thumbnail: https://picsum.photos/200/300
                 title: پکیج دلار و طلا
@@ -71,6 +73,7 @@ get:
                   ]
                 price: 49.99
                 offPrice: 39.99
+                exclusive: true
               - id: 5
                 thumbnail: https://picsum.photos/200/300
                 title: پکیج بورس ایران ۲
@@ -81,6 +84,7 @@ get:
                   ]
                 price: 49.99
                 offPrice: 39.99
+                exclusive: true
 
     "404":
       description: No product found
