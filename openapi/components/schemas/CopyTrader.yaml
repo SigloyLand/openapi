@@ -1,0 +1,35 @@
+type: object
+properties:
+  id:
+    type: integer
+    description: The unique identifier for the copy-trade.
+  trader_name:
+    type: string
+    description: The name of the trader associated with the copy-trade.
+  trader_profile_picture_url:
+    type: string
+    format: uri
+    description: URL to the profile picture of the trader.
+  risk_level:
+    type: string
+    description: The qualitative risk level associated with the trader (e.g., low, medium, high).
+  strategy_description:
+    type: string
+    description: A brief description of the trader's trading strategy or style.
+  chart_data:
+    type: array
+    items:
+      type: number
+    description: Array of float values representing the trader's profit performance.
+  fee_percentage:
+    type: number
+    format: float
+    minimum: 0
+    maximum: 100
+    description: The percentage of profit the trader takes as a fee.
+  performance_percentage:
+          type: number
+          format: float
+          minimum: 0
+          description: The performance of the copy-trader in the last 30 days in percentage.
+
