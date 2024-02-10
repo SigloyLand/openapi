@@ -1,0 +1,28 @@
+get:
+  tags:
+    - Copy-Trader
+  summary: Get all copy traders
+  description: Get all copy traders
+  operationId: getCopyTraders
+  security:
+    - jwt: []
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/CopyTrader.yaml
+    "401":
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Error.yaml
+          examples:
+            forbidden:
+              value:
+                code: 401
+                message: "Not logged in"
