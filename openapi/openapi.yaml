@@ -60,6 +60,8 @@ paths:
     $ref: paths/payment@all.yaml
   "/payment":
     $ref: paths/payment.yaml
+  "/copy-trader/all":
+    $ref: paths/copy-trader@all.yaml
 
 components:
   securitySchemes:
