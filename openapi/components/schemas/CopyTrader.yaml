@@ -28,8 +28,13 @@ properties:
     maximum: 100
     description: The percentage of profit the trader takes as a fee.
   performance_percentage:
-          type: number
-          format: float
-          minimum: 0
-          description: The performance of the copy-trader in the last 30 days in percentage.
+    type: number
+    format: float
+    minimum: 0
+    description: The performance of the copy-trader in the last 30 days in percentage.
+  price:
+    description: copy trader price
+    type: number
+    format: double
+    example: 49.99
 
